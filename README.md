@@ -1,1 +1,1 @@
-# -lcd-character-generator-android
+# LCD Character Generator Android
