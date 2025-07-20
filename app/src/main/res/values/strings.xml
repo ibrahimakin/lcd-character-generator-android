@@ -2,4 +2,5 @@
     <string name="app_name">LCD Character Generator</string>
     <string name="tab_text_1">LCD</string>
     <string name="tab_text_2">Display</string>
+    <string name="clear">Clear</string>
 </resources>

@@ -1,19 +1,20 @@
 package com.iAKIN.lcdcharactergenerator.CustomButton;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import com.iAKIN.lcdcharactergenerator.R;
 
+@SuppressLint("ViewConstructor")
 public class CustomButton extends androidx.appcompat.widget.AppCompatButton {
     boolean isClicked = false;
     int value = 0;
     int row;
 
-    public CustomButton(Context context, int row, int value, String c) {
+    public CustomButton(Context context, int row, int value) {
         super(context);
         this.row = row;
         this.value = value;
         setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
-        setAllCaps(false);
-        setText(c);
     }
 
     public CustomButton(Context context, int row) {
@@ -22,35 +23,17 @@ public class CustomButton extends androidx.appcompat.widget.AppCompatButton {
         setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
     }
 
-    public boolean isClicked() {
-        return isClicked;
-    }
-
     public void setClicked(boolean clicked) {
-        if (clicked) {
-            setBackgroundColor(getResources().getColor(android.R.color.black));
-            setTextColor(getResources().getColor(android.R.color.white));
-        }
-        else {
-            setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
-            setTextColor(getResources().getColor(android.R.color.black));
-        }
+        if (clicked) setBackgroundColor(getResources().getColor(R.color.yellow));
+        else setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
         isClicked = clicked;
     }
 
-    public int getValue() {
-        return value;
-    }
+    public boolean isClicked() { return isClicked; }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
+    public int getValue() { return value; }
 
-    public int getRow() {
-        return row;
-    }
+    public void setValue(int value) { this.value = value; }
 
-    public void setRow(int row) {
-        this.row = row;
-    }
+    public int getRow() { return row; }
 }

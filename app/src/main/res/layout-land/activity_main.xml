@@ -5,6 +5,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     tools:context=".MainActivity"
     android:baselineAligned="false">
     <fragment
@@ -15,8 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        />
+        android:layout_marginRight="50dp" />
     <fragment
         android:id="@+id/display_fragment"
         android:name="com.iAKIN.lcdcharactergenerator.DisplayFragment"
@@ -25,6 +25,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        />
+        android:layout_marginRight="50dp" />
 </LinearLayout>
