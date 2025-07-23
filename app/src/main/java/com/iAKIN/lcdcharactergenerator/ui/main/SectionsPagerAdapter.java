@@ -2,6 +2,7 @@ package com.iAKIN.lcdcharactergenerator.ui.main;
 
 import android.content.Context;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
@@ -27,15 +28,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+    @NonNull
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = null;
-        if (position == 0) { fragment = LCDFragment.newInstance("", ""); }
-        else { fragment = DisplayFragment.newInstance("",  ""); }
         // getItem is called to instantiate the fragment for the given page.
+        Fragment fragment;
+        if (position == 0) fragment = LCDFragment.newInstance();
+        else fragment = DisplayFragment.newInstance();
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return fragment;
         // PlaceholderFragment.newInstance(position + 1);
+        return fragment;
     }
 
     @Nullable

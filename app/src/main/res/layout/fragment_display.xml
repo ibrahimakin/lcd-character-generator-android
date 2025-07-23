@@ -5,55 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DisplayFragment">
-    <!-- TODO: Update blank fragment layout -->
     <GridLayout
         android:id="@+id/display_grid"
-        android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="10"
         android:layout_marginTop="60px"
         android:layout_marginBottom="60px"
         android:layout_marginLeft="120px"
         android:layout_marginRight="120px"
-        android:columnCount="4"
-        android:rowCount="5"/>
-
-        <LinearLayout
+        android:columnCount="5"
+        android:rowCount="8">
+        <TextView android:layout_row="0" android:layout_column="2" android:gravity="center" android:layout_rowWeight="1" android:layout_columnWeight="10" android:text="a" />
+        <TextView android:layout_row="2" android:layout_column="0" android:gravity="center" android:layout_rowWeight="10" android:layout_columnWeight="1" android:text="f" />
+        <TextView android:layout_row="2" android:layout_column="4" android:gravity="center" android:layout_rowWeight="10" android:layout_columnWeight="1" android:text="b" />
+        <TextView android:layout_row="3" android:layout_column="2" android:gravity="center" android:layout_rowWeight="1" android:layout_columnWeight="10" android:text="g" />
+        <TextView android:layout_row="5" android:layout_column="0" android:gravity="center" android:layout_rowWeight="10" android:layout_columnWeight="1" android:text="e" />
+        <TextView android:layout_row="5" android:layout_column="4" android:gravity="center" android:layout_rowWeight="10" android:layout_columnWeight="1" android:text="c" />
+        <TextView android:layout_row="6" android:layout_column="2" android:gravity="center" android:layout_rowWeight="1" android:layout_columnWeight="10" android:text="d" />
+        <TextView android:layout_row="6" android:layout_column="4" android:gravity="center" android:layout_rowWeight="1" android:layout_columnWeight="1" android:text="dp" />
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="% " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dDP" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dG" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dF" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dE" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dD" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dC" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dB" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dA" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text=" = " />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/dR" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="120px"
+        android:layout_weight="1">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1">
-            <TextView android:text="% " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dDP" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dG" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dF" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dE" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dD" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dC" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dB" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dA" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:text=" = " android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <TextView android:id="@+id/dR" android:text="0" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="120px"
-            android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/clear_display"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:minHeight="34dip"
-                android:textAllCaps="false"
-                android:text="Clear"/>
-        </LinearLayout>
+            android:minHeight="34dip"
+            android:textAllCaps="false"
+            android:text="@string/clear" />
+    </LinearLayout>
 </LinearLayout>
