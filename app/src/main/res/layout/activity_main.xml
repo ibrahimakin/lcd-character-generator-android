@@ -17,8 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            app:tabSelectedTextColor="#000"
-            app:tabIndicatorColor="#333" />
+            app:tabSelectedTextColor="@color/black"
+            app:tabIndicatorColor="#333"
+            app:tabTextColor="#555" />
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
