@@ -45,35 +45,36 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1">
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="LCDOUT $fe, $40, " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR1" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR2" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR3" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR4" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR5" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR6" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR7" />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
-            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR8" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="LCDOUT $fe, $40, " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR1" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR2" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR3" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR4" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR5" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR6" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR7" />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text=", " />
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="0" android:id="@+id/rowR8" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/clear_lcd"
+            android:backgroundTint="#bbb"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="120px"
-            android:layout_weight="1">
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/clear_lcd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:minHeight="34dip"
-                android:textAllCaps="false"
-                android:text="@string/clear" />
-        </LinearLayout>
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:minHeight="34dip"
+            android:textAllCaps="false"
+            android:text="@string/clear" />
+    </LinearLayout>
 </LinearLayout>
